@@ -1,0 +1,21 @@
+[project]
+name = "ts-backtest"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Larry Lewis",email = "Larry.Lewis@sas.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "polars (>=1.22.0,<2.0.0)"
+]
+
+[tool.poetry]
+package-mode = false
+packages = [{include = "ts_backtest", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
